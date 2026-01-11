@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Header & Nav */
+.top-info-bar {
+    background-color: #d1d5db;
+    padding: 8px 0;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.logo { text-decoration: none; font-size: 28px; font-weight: 800; }
+.logo-on { color: #facc15; }
+.logo-site { color: #3b82f6; }
+
+.btn-yellow {
+    background-color: #eab308;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 6px;
+}
+
+/* Main Login Section Background */
+.login-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    padding: 100px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Card Container */
+.login-card-container {
+    border-radius: 40px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.worker-image-box {
+    height: 100%;
+}
+
+.worker-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+/* Glassmorphism Form Box */
+.login-glass-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    padding: 50px;
+    width: 100%;
+    max-width: 500px;
+    color: #000;
+}
+
+.form-title {
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+/* Underline Inputs */
+.input-field {
+    margin-bottom: 25px;
+}
+
+.input-field label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-wrapper {
+    position: relative;
+    border-bottom: 2px solid #000;
+}
+
+.input-wrapper input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 5px 30px 5px 0;
+    outline: none;
+    font-weight: 500;
+}
+
+.input-wrapper i {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 22px;
+}
+
+/* Buttons */
+.btn-login-blue {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.link-text a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 25px 0;
+    font-size: 11px;
+    color: #000;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+/* Social Buttons */
+.social-login-row {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-social-white {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #0d1b24;
+    color: #94a3b8;
+}
+
+.footer-heading { color: white; font-weight: 600; }
+.footer-list { list-style: none; padding: 0; font-size: 14px; }
+.footer-list li { margin-bottom: 10px; }
+
+.social-links a {
+    color: white;
+    background: rgba(255,255,255,0.1);
+    width: 35px; height: 35px;
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    border-radius: 50%;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 20px 0;
+    margin-top: 20px;
+}
