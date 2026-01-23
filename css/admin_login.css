@@ -1,0 +1,62 @@
+/* Body Background */
+body {
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Glassmorphism Card Effect */
+.login-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Custom Input Styling */
+.input-group-text {
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.input-group .form-control {
+    background: rgba(255, 255, 255, 0.85); /* Slightly transparent white */
+    font-size: 1.1rem;
+}
+
+.input-group .form-control:focus {
+    box-shadow: none;
+    background: white;
+}
+
+/* Navigation Overrides */
+.btn-warning {
+    background-color: #f1b400;
+    border-color: #f1b400;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Rounded Pill Utilities */
+.rounded-pill-start {
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+}
+
+.rounded-pill-end {
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+}
