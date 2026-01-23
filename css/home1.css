@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    color: #000;
+}
+
+/* MAIN HEADING */
+.main-heading {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 30px 0 20px;
+}
+
+/* MAIN LAYOUT (NO BORDER) */
+.container {
+    width: 1220px;
+    height: 584px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* IMAGE */
+.image-section img {
+    width: 657px;
+    height: 544px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* CONTENT */
+.content-section {
+    width: 500px;
+    padding-top: 10px;
+}
+
+/* TITLE */
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* STEPS */
+.step {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.num {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #f5a623;
+    min-width: 30px;
+}
+
+.step p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    color: #333;
+}
