@@ -1,0 +1,76 @@
+:root {
+    --primary-blue: #00128a;
+    --accent-yellow: #fdd486;
+    --coming-soon-bg: #dcfce7;
+    --coming-soon-text: #22c55e;
+}
+
+body.bg-gradient-custom {
+    background: linear-gradient(180deg, #ffffff 0%, #0037c5 100%);
+    min-vh: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Pricing Card Styles */
+.pricing-card {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.featured-card {
+    background-color: var(--primary-blue);
+    transform: scale(1.05); /* Makes the center card slightly larger */
+    border: 2px solid #3b82f6;
+}
+
+/* Feature List Styles */
+ul li {
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+ul li i {
+    font-size: 1.1rem;
+}
+
+/* Badge Styles */
+.bg-warning-light {
+    background-color: var(--accent-yellow);
+}
+
+.bg-primary-light {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: normal;
+}
+
+.badge-soon {
+    background-color: var(--coming-soon-bg);
+    color: var(--coming-soon-text);
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+/* Button Customization */
+.btn-warning {
+    background-color: var(--accent-yellow);
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #fbc24a;
+}
+
+/* Toggle Container Styles */
+.toggle-container {
+    border: 1px solid #e5e7eb;
+}
+
+.toggle-container .btn {
+    font-weight: 500;
+    border: none;
+}
