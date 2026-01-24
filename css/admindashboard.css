@@ -1,0 +1,89 @@
+:root {
+    --bg-light-purple: #f3f2f7;
+    --accent-yellow: #fdd400;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.bg-light-purple {
+    background-color: var(--bg-light-purple);
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
+
+/* Sidebar Styling */
+.sidebar .nav-link {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    border-bottom: 1px solid transparent;
+}
+
+.sidebar .nav-link.active {
+    color: #333;
+}
+
+.user-avatar {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stat Cards with Circle Gradients */
+.stat-card {
+    height: 180px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative circles on cards */
+.stat-card::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    bottom: -30px;
+    right: -30px;
+}
+
+.card-red { background-color: #ff9d8c; }
+.card-blue { background-color: #74b9ff; }
+.card-teal { background-color: #78e0c2; }
+
+/* Table Styling */
+.table thead th {
+    font-weight: 600;
+    color: #555;
+    padding-bottom: 20px;
+}
+
+.table tbody td {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.badge {
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Navbar & Button Styling */
+.btn-warning {
+    background-color: var(--accent-yellow);
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e5c100;
+}

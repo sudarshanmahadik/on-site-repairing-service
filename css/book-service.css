@@ -1,0 +1,88 @@
+:root {
+    --sidebar-bg: #1a233a;
+    --header-blue: #2563eb;
+    --accent-yellow: #fdd400;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+}
+
+.header-blue {
+    background-color: var(--header-blue);
+}
+
+/* Sidebar Styles */
+.sidebar-dark {
+    background-color: var(--sidebar-bg);
+    min-height: 100vh;
+}
+
+.avatar-bg {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
+
+.sidebar-links .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 1.1rem;
+}
+
+.sidebar-links .nav-link.active {
+    color: var(--accent-yellow) !important;
+}
+
+.logout-container {
+    margin-top: 40px;
+}
+
+/* Main Content Area */
+main {
+    background-color: #ffffff;
+}
+
+.booking-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 600px;
+}
+
+.form-label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Button & UI Colors */
+.btn-warning {
+    background-color: var(--accent-yellow);
+    border: none;
+    color: #000;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.1);
+    border-color: var(--header-blue);
+}

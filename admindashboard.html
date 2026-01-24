@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/admindashboard.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container-fluid px-5">
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav gap-4 fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Plans</a></li>
+                </ul>
+            </div>
+            <div class="d-flex gap-3">
+                <button class="btn btn-warning fw-bold px-4 shadow-sm">Login</button>
+                <button class="btn btn-warning fw-bold px-4 shadow-sm">Sign up</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block sidebar py-4 border-end min-vh-100">
+                <div class="text-center mb-5 px-3 d-flex align-items-center gap-2">
+                    <div class="user-avatar bg-light rounded-circle shadow-sm">
+                        <i class="bi bi-person-fill fs-2"></i>
+                    </div>
+                    <div class="text-start">
+                        <p class="mb-0 small fw-bold">Name: Rita Sharma</p>
+                        <p class="mb-0 x-small text-muted">Id: 23</p>
+                        <p class="mb-0 x-small text-muted">Type: Premium</p>
+                    </div>
+                </div>
+
+                <div class="nav flex-column gap-2 px-3">
+                    <a class="nav-link active d-flex justify-content-between align-items-center" href="#">
+                        Dashboard <i class="bi bi-house-door-fill"></i>
+                    </a>
+                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
+                        Request <i class="bi bi-person-wrench"></i>
+                    </a>
+                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
+                        Status <i class="bi bi-check2-circle"></i>
+                    </a>
+                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
+                        Technician Add <i class="bi bi-person-plus-fill"></i>
+                    </a>
+                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
+                        User Report <i class="bi bi-exclamation-circle-fill"></i>
+                    </a>
+                    
+                    <button class="btn btn-warning fw-bold mt-5 rounded-pill py-2 shadow-sm">
+                        <i class="bi bi-box-arrow-left me-2"></i> Log Out
+                    </button>
+                </div>
+            </nav>
+
+            <main class="col-md-10 bg-light-purple p-5">
+                <h2 class="mb-4 d-flex align-items-center gap-2">
+                    <span class="icon-box bg-primary text-white p-1 rounded-3">
+                        <i class="bi bi-house-door-fill fs-5"></i>
+                    </span> Dashboard
+                </h2>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="card stat-card card-red border-0 text-white p-3">
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-bold">Request Per Day</p>
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <h1 class="display-4 fw-bold">26</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card stat-card card-blue border-0 text-white p-3">
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-bold">Technician Assign</p>
+                                <i class="bi bi-person-fill-gear"></i>
+                            </div>
+                            <h1 class="display-4 fw-bold">26</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card stat-card card-teal border-0 text-white p-3">
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-bold">Request Status</p>
+                                <i class="bi bi-check-circle"></i>
+                            </div>
+                            <div class="mt-2">
+                                <p class="mb-0">In Progress: <span class="fs-4 fw-bold">10</span></p>
+                                <p class="mb-0">Solve: <span class="fs-4 fw-bold">10</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm rounded-4 p-4">
+                    <h4 class="fw-bold mb-4">Recent Request</h4>
+                    <div class="table-responsive">
+                        <table class="table text-center align-middle">
+                            <thead class="table-light border-0">
+                                <tr>
+                                    <th>User Name</th>
+                                    <th>Service Type</th>
+                                    <th>Tracking Id</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nobita</td>
+                                    <td>Computer</td>
+                                    <td>SC-001</td>
+                                    <td>1-10-25</td>
+                                    <td><span class="badge bg-warning text-dark px-3 py-2 w-75">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Raj</td>
+                                    <td>Network</td>
+                                    <td>SN-002</td>
+                                    <td>2-10-25</td>
+                                    <td><span class="badge bg-primary px-3 py-2 w-75">Solve</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ria</td>
+                                    <td>Server</td>
+                                    <td>SS-003</td>
+                                    <td>1-10-25</td>
+                                    <td><span class="badge bg-warning text-dark px-3 py-2 w-75">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kiran</td>
+                                    <td>Computer</td>
+                                    <td>SC-001</td>
+                                    <td>3-10-25</td>
+                                    <td><span class="badge bg-primary px-3 py-2 w-75">Solve</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
