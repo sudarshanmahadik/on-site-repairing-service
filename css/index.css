@@ -1019,3 +1019,65 @@ p {
 .booking-widget {
     bottom: -32px;
 }
+
+/* ===== UNIVERSAL RESPONSIVE CSS ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;   /* horizontal scroll बंद */
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
+/* flex layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* common items */
+.box {
+  flex: 1 1 300px;   /* mobile friendly */
+  padding: 15px;
+}
+
+/* text responsive */
+h1 { font-size: clamp(22px, 4vw, 40px); }
+h2 { font-size: clamp(18px, 3vw, 32px); }
+p  { font-size: clamp(14px, 2.5vw, 18px); }
+
+/* ===== MOBILE MEDIA QUERY ===== */
+@media (max-width: 768px) {
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -15,11 +15,10 @@ body {
 }
 
 .bg-light-gray {
-    background-color: #d1d5db; /* Greyish background from the image */
+    background-color: #d1d5db; 
     min-height: 90vh;
 }
 
-/* Sidebar Styles */
 .sidebar-dark {
     background-color: var(--sidebar-bg);
     color: white;
@@ -49,7 +48,6 @@ body {
     font-size: 0.75rem;
 }
 
-/* Card Styles */
 .stat-mini {
     height: 100px;
     border-radius: 12px;
@@ -69,7 +67,69 @@ body {
     border: none;
 }
 
-/* Spacing Adjustments */
 main .p-4 {
     padding: 2rem !important;
+}
+
+/* 1. Navbar Links Animation */
+.navbar-nav .nav-link {
+    position: relative; 
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.sidebar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover, 
+.sidebar-nav .nav-link:hover {
+    color: var(--accent-yellow) !important; 
+}
+
+.navbar-nav .nav-link::after,
+.sidebar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 2px; 
+    bottom: 5px; 
+    left: 0;
+    background-color: var(--accent-yellow);
+    transition: width 0.3s ease-in-out; 
+}
+
+.navbar-nav .nav-link:hover::after,
+.sidebar-nav .nav-link:hover::after {
+    width: 100%; 
+}
+
+.sidebar-nav .nav-link {
+    padding-bottom: 10px;
+}
+
+.stat-mini {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+}
+
+.stat-mini:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Shadow vadhvane */
+    background-color: #ffffff; 
+}
+
+.btn-primary {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05); background-color: #1e40af; 
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4); 
+}
+
+.btn-primary:active {
+    transform: scale(0.95); 
 }

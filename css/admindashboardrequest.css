@@ -137,10 +137,10 @@ main h2.d-flex.align-items-center {
 /* Specifically target the icon box background to make it yellow or transparent */
 main h2 .icon-box.bg-primary {
     background-color: var(--accent-yellow) !important;
-    color: #333 !important; 
+    color: #333 !important; /* Icon dark color madhe rakha jyaamule to yellow var disel */
 }
 
-/* Sidebar  Active Dashboard link yellow  */
+/* Sidebar Active Dashboard link yellow  */
 .sidebar .nav-link.active {
     color: var(--accent-yellow) !important;
 }
