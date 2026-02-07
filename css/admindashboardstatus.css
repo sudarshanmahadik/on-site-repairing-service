@@ -125,7 +125,7 @@ body {
 .bg-light-purple { background-color: var(--bg-light-purple); }
 .x-small { font-size: 0.75rem; }
 .user-avatar { width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; }
-.table thead th { font-weight: 600; color: #555; padding-bottom: 20px; }
+.table thead th { font-weight: 600; color: #555; padding-bottom: 2px; }
 .table tbody td { padding: 20px 0; border-bottom: 1px solid #eee; }
 .badge { border-radius: 5px; font-weight: 500; }
 
@@ -139,9 +139,77 @@ body {
     color: var(--accent-yellow) !important;
 }
 
-/* 1. Purple Icon Box Styling */
+/* --- STEPPER BAR STYLING --- */
+.stepper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Important for full width */
+    margin: 0 auto;
+}
+
+.stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+/* Connecting Line */
+.stepper-item::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -50%;
+    width: 100%;
+    height: 6px;
+    background-color: #d1d5db; /* Gray line */
+    z-index: 1;
+}
+
+.stepper-item:first-child::before { content: none; }
+
+/* Circle Styling */
+.step-counter {
+    position: relative;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    background-color: #d1d5db; /* Gray circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.step-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Completed Status (Yellow Effect) */
+.stepper-item.completed .step-counter {
+    background-color: var(--accent-yellow);
+    color: #000;
+    box-shadow: 0 0 15px rgba(253, 212, 0, 0.4);
+}
+
+.stepper-item.completed::before {
+    background-color: var(--accent-yellow);
+}
+
+/* Icon and Hover Effect */
+.stepper-item:hover .step-counter {
+    transform: scale(1.1);
+}
+
 .icon-box-purple {
-    background-color: #6366f1 !important; /* Image sarkha exact purple */
+    background-color: #6366f1 !important;
     color: white !important;
     width: 45px;
     height: 45px;
@@ -151,27 +219,6 @@ body {
     border-radius: 10px;
 }
 
-/* 2. Stat Cards sathi Image sarkhe Gradients */
-.card-blue { 
-    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%) !important; 
+.fs-5 {
+    font-size: 1.25rem !important;
 }
-
-.card-red { 
-    background: linear-gradient(135deg, #4338ca 0%, #db2777 100%) !important; 
-}
-
-/* 3. Table Headers thode small ani gray karnyasaathi */
-.table thead th {
-    background-color: #f8f9fa !important;
-    color: #6c757d !important;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* 4. Table Badges sathi extra spacing */
-.badge {
-    border-radius: 6px !important;
-    font-weight: 500 !important;
-}
-

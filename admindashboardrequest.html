@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Admin Dashboard Request</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/admindashboardrequest.css">
@@ -67,85 +67,69 @@
             </nav>
 
             <main class="col-md-10 bg-light-purple p-5">
-                <h2 class="mb-4 d-flex align-items-center gap-2">
-                    <span class="icon-box bg-primary text-white p-1 rounded-3">
-                        <i class="bi bi-house-door-fill fs-5"></i>
-                    </span> Dashboard
-                </h2>
+    <h2 class="mb-5 d-flex align-items-center gap-3 fw-bold">
+        <span class="icon-box-purple shadow-sm">
+            <i class="bi bi-house-door-fill fs-5"></i>
+        </span> Request
+    </h2>
 
-                <div class="row g-4 mb-5">
-                    <div class="col-md-4">
-                        <div class="card stat-card card-red border-0 text-white p-3">
-                            <div class="d-flex justify-content-between">
-                                <p class="fw-bold">Technician Available</p>
-                                <i class="bi bi-graph-up-arrow"></i>
-                            </div>
-                            <h1 class="display-4 fw-bold">26</h1>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card stat-card card-blue border-0 text-white p-3">
-                            <div class="d-flex justify-content-between">
-                                <p class="fw-bold">Technician Assigned</p>
-                                <i class="bi bi-person-fill-gear"></i>
-                            </div>
-                            <h1 class="display-4 fw-bold">26</h1>
-                        </div>
-                    </div>
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="card stat-card card-blue border-0 text-white p-3 shadow-sm">
+                <div class="d-flex justify-content-between">
+                    <p class="fw-bold">Technician Available</p>
+                    <i class="bi bi-graph-up-arrow"></i>
                 </div>
+                <h1 class="display-4 fw-bold">26</h1>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card stat-card card-red border-0 text-white p-3 shadow-sm">
+                <div class="d-flex justify-content-between">
+                    <p class="fw-bold">Technician Assigned</p>
+                    <i class="bi bi-person-fill-gear"></i>
+                </div>
+                <h1 class="display-4 fw-bold">26</h1>
+            </div>
+        </div>
+    </div>
 
-                <div class="card border-0 shadow-sm rounded-4 p-4">
-                    <h4 class="fw-bold mb-4">Recent Request</h4>
-                    <div class="table-responsive">
-                        <table class="table text-center align-middle">
-                            <thead class="table-light border-0">
-                                <tr>
-                                    <th>User Name</th>
-                                    <th>Service Type</th>
-                                    <th>Tracking Id</th>
-                                    <th>Date</th>
-                                    <th>Status</th>
-                                    <th>Assign</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Nobita</td>
-                                    <td>Computer</td>
-                                    <td>SC-001</td>
-                                    <td>1-10-25</td>
-                                    <td><span class="badge bg-warning text-dark px-3 py-2 w-75">Pending</span></td>
-                                    <td><span class="badge bg-danger px-3 py-2 w-75">No</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Raj</td>
-                                    <td>Network</td>
-                                    <td>SN-002</td>
-                                    <td>2-10-25</td>
-                                    <td><span class="badge bg-primary px-3 py-2 w-75">Solve</span></td>
-                                    <td><span class="badge bg-success px-3 py-2 w-75">Yes</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Ria</td>
-                                    <td>Server</td>
-                                    <td>SS-003</td>
-                                    <td>1-10-25</td>
-                                    <td><span class="badge bg-warning text-dark px-3 py-2 w-75">Pending</span></td>
-                                    <td><span class="badge bg-danger px-3 py-2 w-75">No</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Kiran</td>
-                                    <td>Computer</td>
-                                    <td>SC-001</td>
-                                    <td>3-10-25</td>
-                                    <td><span class="badge bg-primary px-3 py-2 w-75">Solve</span></td>
-                                    <td><span class="badge bg-danger px-3 py-2 w-75">No</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </main>
+    <div class="card border-0 shadow-sm rounded-4 p-4">
+        <h4 class="fw-bold mb-4">Recent Request</h4>
+        <div class="table-responsive">
+            <table class="table text-center align-middle">
+                <thead class="table-light border-0">
+                    <tr class="text-muted small">
+                        <th>User Name</th>
+                        <th>Service Type</th>
+                        <th>Tracking Id</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Assign</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nobita</td>
+                        <td>Computer</td>
+                        <td>SC-001</td>
+                        <td>1-10-25</td>
+                        <td><span class="badge bg-warning text-dark px-3 py-2 w-75">Pending</span></td>
+                        <td><span class="badge bg-danger text-white px-3 py-2 w-75">No</span></td>
+                    </tr>
+                    <tr>
+                        <td>Raj</td>
+                        <td>Network</td>
+                        <td>SN-002</td>
+                        <td>2-10-25</td>
+                        <td><span class="badge bg-primary text-white px-3 py-2 w-75">Solve</span></td>
+                        <td><span class="badge bg-success text-white px-3 py-2 w-75">Yes</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
         </div>
     </div>
 

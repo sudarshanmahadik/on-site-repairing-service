@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard Status</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/admindashboardstatus.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container-fluid px-5">
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav gap-4 fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Plans</a></li>
+                </ul>
+            </div>
+            <div class="d-flex gap-3">
+                <button class="btn btn-warning fw-bold px-4 shadow-sm">Login</button>
+                <button class="btn btn-warning fw-bold px-4 shadow-sm">Sign up</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block sidebar py-4 border-end min-vh-100">
+                <div class="text-center mb-5 px-3 d-flex align-items-center gap-2">
+                    <div class="user-avatar bg-light rounded-circle shadow-sm">
+                        <i class="bi bi-person-fill fs-2"></i>
+                    </div>
+                    <div class="text-start">
+                        <p class="mb-0 small fw-bold">Name: Rita Sharma</p>
+                        <p class="mb-0 x-small text-muted">Id: 23</p>
+                        <p class="mb-0 x-small text-muted">Type: Premium</p>
+                    </div>
+                </div>
+
+                <div class="nav flex-column gap-2 px-3">
+                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
+                        Dashboard <i class="bi bi-house-door-fill"></i>
+                    </a>
+                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
+                        Request <i class="bi bi-person-wrench"></i>
+                    </a>
+                    <a class="nav-link active d-flex justify-content-between align-items-center" href="#">
+                        Status <i class="bi bi-check2-circle"></i>
+                    </a>
+                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
+                        Technician Add <i class="bi bi-person-plus-fill"></i>
+                    </a>
+                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
+                        User Report <i class="bi bi-exclamation-circle-fill"></i>
+                    </a>
+                    
+                    <button class="btn btn-warning fw-bold mt-5 rounded-pill py-2 shadow-sm">
+                        <i class="bi bi-box-arrow-left me-2"></i> Log Out
+                    </button>
+                </div>
+            </nav>
+
+            <main class="col-md-10 bg-light-purple p-5">
+                <h2 class="mb-5 d-flex align-items-center gap-3 fw-bold">
+                  <span class="icon-box-purple shadow-sm">
+                    <i class="bi bi-house-door-fill fs-5"></i>
+                  </span> Request
+                 </h2>
+
+                <div class="row mb-5 justify-content-center">
+                    <div class="col-12 text-center">
+                        <p class="fw-bold mb-5 fs-5">Tracking Id : SC-001</p>
+                        
+                        <div class="stepper-wrapper px-4">
+                            <div class="stepper-item completed">
+                                <div class="step-counter"><i class="bi bi-display"></i></div>
+                                <div class="step-name">Pending</div>
+                            </div>
+                            <div class="stepper-item completed">
+                                <div class="step-counter"><i class="bi bi-signpost-2"></i></div>
+                                <div class="step-name">In Route</div>
+                            </div>
+                            <div class="stepper-item">
+                                <div class="step-counter"><i class="bi bi-tools"></i></div>
+                                <div class="step-name">Working</div>
+                            </div>
+                            <div class="stepper-item">
+                                <div class="step-counter"><i class="bi bi-check-lg"></i></div>
+                                <div class="step-name">Complete</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm rounded-4 p-4 mt-5">
+                    <h4 class="fw-bold mb-4">Recent Request</h4>
+                    <div class="table-responsive">
+                        <table class="table text-center align-middle">
+                            <thead class="table-light border-0">
+                                <tr>
+                                    <th>User Name</th>
+                                    <th>Service Type</th>
+                                    <th>Tracking Id</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Assign</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nobita</td>
+                                    <td>Computer</td>
+                                    <td>SC-001</td>
+                                    <td>1-10-25</td>
+                                    <td><span class="badge bg-warning text-dark px-3 py-2 w-75">Pending</span></td>
+                                    <td><span class="badge bg-danger px-3 py-2 w-75 text-white">No</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Raj</td>
+                                    <td>Network</td>
+                                    <td>SN-002</td>
+                                    <td>2-10-25</td>
+                                    <td><span class="badge bg-primary px-3 py-2 w-75 text-white">Solve</span></td>
+                                    <td><span class="badge bg-success px-3 py-2 w-75 text-white">Yes</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
