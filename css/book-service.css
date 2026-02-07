@@ -2,87 +2,97 @@
     --sidebar-bg: #1a233a;
     --header-blue: #2563eb;
     --accent-yellow: #fdd400;
+    --transition-speed: 0.3s;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background-color: #f8fafc;
 }
 
-.header-blue {
-    background-color: var(--header-blue);
-}
+.header-blue { background-color: var(--header-blue); }
 
-/* Sidebar Styles */
-.sidebar-dark {
-    background-color: var(--sidebar-bg);
-    min-height: 100vh;
-}
+/* --- SIDEBAR STYLING --- */
+.sidebar-dark { background-color: var(--sidebar-bg); }
 
 .avatar-bg {
-    width: 50px;
-    height: 50px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 50px; height: 50px;
+    background-color: #fff; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
 }
 
-.x-small {
-    font-size: 0.75rem;
-}
-
+/* Sidebar Hover & Underline Animation */
 .sidebar-links .nav-link {
-    color: #ffffff;
-    font-weight: 500;
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    font-size: 1.1rem;
+    color: #fff; font-weight: 500;
+    padding: 15px 0; position: relative;
+    transition: color var(--transition-speed) ease;
 }
 
-.sidebar-links .nav-link.active {
+.sidebar-links .nav-link:hover, .sidebar-links .nav-link.active {
     color: var(--accent-yellow) !important;
 }
 
-.logout-container {
-    margin-top: 40px;
-}
-
-/* Main Content Area */
-main {
-    background-color: #ffffff;
-}
-
-.booking-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    min-height: 600px;
-}
-
-.form-label {
-    font-size: 1.1rem;
-    color: #333;
-}
-
-/* Button & UI Colors */
-.btn-warning {
+.sidebar-links .nav-link::after {
+    content: ''; position: absolute;
+    width: 0; height: 2px;
+    bottom: 5px; left: 0;
     background-color: var(--accent-yellow);
-    border: none;
-    color: #000;
+    transition: width var(--transition-speed) ease-in-out;
 }
 
+.sidebar-links .nav-link:hover::after { width: 100%; }
+
+/* --- BOOKING FORM ANIMATION --- */
+.booking-container {
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+/* Box lifts up on hover */
+.booking-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+}
+
+/* Button Scaling Animation */
 .btn-primary {
-    background-color: #2563eb;
+    background-color: var(--header-blue);
+    transition: all var(--transition-speed) ease;
     border: none;
-    border-radius: 8px;
 }
 
 .btn-primary:hover {
+    transform: scale(1.05);
     background-color: #1d4ed8;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
 }
 
-.form-control:focus, .form-select:focus {
-    box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.1);
-    border-color: var(--header-blue);
+.btn-warning { background-color: var(--accent-yellow); border: none; }
+
+/* --- Navbar Links Hover Animation --- */
+.navbar-nav .nav-link {
+    position: relative;
+    color: #ffffff !important; /* Default color white */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+/* Hover kelyavar text yellow karne */
+.navbar-nav .nav-link:hover {
+    color: var(--accent-yellow) !important;
+}
+
+/* Khali yenari line (Underline) chi design */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Suruvatila width 0 asel */
+    height: 3px; /* Line chi jadi */
+    bottom: -2px; /* Text chya thode khali */
+    left: 0;
+    background-color: var(--accent-yellow);
+    transition: width 0.3s ease-in-out; /* Left to Right animation */
+}
+
+/* Mouse hover kelyavar line 0 te 100% paryant vadhne */
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
 }
