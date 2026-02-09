@@ -260,10 +260,6 @@
 .input-field input:focus, 
 .input-field select:focus, 
 .input-field textarea:focus {
-    border-bottom: 2px solid #fdd400; /* Focus kelyavar yellow border */
+    border-bottom: 2px solid #fdd400; 
     transition: border-color 0.3s ease;
 }
-
-
-
-

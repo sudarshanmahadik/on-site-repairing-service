@@ -709,13 +709,19 @@ p {
             box-shadow: 0 15px 40px rgba(0,0,0,0.2);
         }
 
-        .profile-img img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
+        .profile-img {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center (garaj aslyas) */
+}
+
+.profile-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
 
         .client-name {
             font-size: 1rem;
@@ -844,13 +850,6 @@ p {
             line-height: 1.6;
             color: #b0b0b0;
             margin-bottom: 20px;
-        }
-
-        .social-icons i {
-            font-size: 1.2rem;
-            margin-right: 15px;
-            cursor: pointer;
-            color: #b0b0b0;
         }
 
         .footer-links {
@@ -1081,3 +1080,4 @@ p  { font-size: clamp(14px, 2.5vw, 18px); }
     gap: 10px;
   }
 }
+

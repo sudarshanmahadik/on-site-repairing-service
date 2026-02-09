@@ -1,0 +1,27 @@
+/* Footer Social Icons & Animation */
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons i {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    cursor: pointer;
+    color: #b0b0b0; 
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth bounce effect */
+}
+
+.social-icons i:hover {
+    color: #f3bc18 !important; 
+    transform: translateY(-8px) scale(1.3);
+}
+
+/* Footer Links Hover */
+.footer-links a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f3bc18 !important;
+}
