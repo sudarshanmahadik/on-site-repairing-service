@@ -1,0 +1,104 @@
+/* --- HERO SECTION --- */
+.contact-hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+}
+
+.hero-text-container h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; }
+.hero-text-container p { font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px; }
+
+/* --- STORY & MISSION --- */
+.about-details { padding: 80px 0; }
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+.detail-row.reverse { flex-direction: row-reverse; }
+.detail-text { flex: 1; }
+.detail-text h2 { font-size: 2.2rem; color: #1a1a1a; margin-bottom: 20px; border-bottom: 4px solid #fdd400; display: inline-block; }
+.detail-image { flex: 1; }
+.detail-image img { width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+/* --- WHY CHOOSE US (SINGLE ANIMATION LOGIC) --- */
+.why-choose-section { padding: 80px 0; background: #fff; font-family: 'Poppins', sans-serif; }
+.why-choose-container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 50px; }
+.why-choose-text { flex: 1; }
+.why-choose-image { flex: 1; }
+.why-choose-image img { width: 100%; border-radius: 20px; }
+
+.feature-item { display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px; cursor: pointer; }
+
+.icon-circle {
+    min-width: 70px;
+    height: 70px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.icon-circle img { width: 35px; transition: transform 0.6s ease; }
+
+/* Feature Hover: Lift + 360 Rotation */
+.feature-item:hover .icon-circle {
+    background: #fdd400;
+    border-color: #fdd400;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(253, 212, 0, 0.4);
+}
+.feature-item:hover .icon-circle img { transform: rotateY(360deg); }
+
+/* --- TEAM SECTION (SINGLE ANIMATION LOGIC) --- */
+.team-section { padding: 80px 0; background-color: #f8fafc; text-align: center; }
+.team-grid { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+
+.team-card { flex: 1; min-width: 280px; max-width: 350px; transition: transform 0.4s ease; cursor: pointer; }
+
+.image-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px auto 25px; 
+    overflow: hidden; 
+    transition: all 0.5s ease;
+    border: 4px solid #fff; /* White border jyamule glow chhan disto */
+}
+
+.image-container img {
+    
+    object-fit: cover; /* Jar square image asel tar he best aahe */
+    transition: transform 0.8s ease-in-out;
+}
+
+/* Team Hover: Card Lift + Image Zoom */
+.team-card:hover { transform: translateY(-15px); }
+.team-card:hover .image-container {
+    box-shadow: 0 0 30px rgba(253, 212, 0, 0.9); /* Strong Yellow Glow */
+    transform: translateY(-10px);
+}
+.team-card:hover .image-container img {
+    transform: rotateY(180deg) scale(1.1); /* Rotate + Zoom */
+}
+
+/* --- BUTTONS --- */
+.btn-primary-blue {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-primary-blue:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3); }
