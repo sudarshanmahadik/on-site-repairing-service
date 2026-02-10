@@ -1,0 +1,721 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    background: #FFFFFF;
+}
+
+/* TOP BAR - Accurate to Frame 20775 */
+.top-bar {
+    width: 1440px;
+    height: 42px;
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.specialist-text {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 36px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+/* HERO SECTION - Accurate to Frame 20783 */
+.hero-section {
+    width: 1440px;
+    height: 669px;
+    background: radial-gradient(circle at center, rgba(170,170,170,0.2) 0%, rgba(0,0,0,0.8) 100%), url('/images/product1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* NAVBAR - Accurate Position & Transparency */
+.navbar {
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.05); /* Figma sarkha light tint */
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: flex-end; /* Links la right la sarakvle */
+    align-items: center;
+    padding-right: 80px;
+    position: absolute;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    margin-right: 40px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* BUTTONS - Accurate Hex & Sizes */
+.login-btn {
+    width: 85px;
+    height: 49px;
+    background: #D3A518;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.signup-btn {
+    width: 97px;
+    height: 49px;
+    background: #D3A518;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* HERO CONTENT - Exact Padding/Margins */
+.hero-content {
+    position: absolute;
+    left: 98px; /* Figma property: Left 98px */
+    top: 210px; /* Figma property: Top 210px */
+    width: 766px;
+}
+
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.hero-desc {
+    width: 611px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 1.4;
+    margin-bottom: 38px;
+}
+
+.get-started {
+    width: 212px;
+    height: 47px;
+    background: #1755E6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+.section-title{
+    width:1440px;
+    text-align:center;
+    padding:60px 0;
+
+}
+.section-title h2{
+    font-family:'poppins',sans-serif;
+    font: size 48px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+/* Hero Container - Full Width */
+.hero-container {
+    width: 1440px;
+    height: 669px;
+    background: #FFFFFF; /* Figma madhe left side white/light asu शकते */
+    overflow: hidden;
+}
+
+.hero-split {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left Side - Text Alignment (Figma Left: 98px) */
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 98px; /* Exact Figma Padding */
+    background: #FFFFFF;
+}
+
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+    color: #FFFFFF; /* Text black sathi */
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.hero-desc {
+    width: 611px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    width: 212px;
+    height: 47px;
+    background: #1755E6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Right Side - Image Alignment */
+.hero-right {
+    flex: 1;
+    height: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Image design sarkhi right la fix basel */
+    /* Jar image la mask kiva gradient asel tar ithe add karu shakto */
+}
+
+/* Coming Soon Section */
+.coming-soon-section {
+    width: 1440px;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    margin-bottom: 80px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-box {
+    width: 180px;
+    height: 180px;
+    background: #F5F5F5;
+    border-radius: 50%;
+    border: 2px dashed #D3A518;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.circle-box span {
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: #1755E6;
+    font-weight: 600;
+}
+
+.part-title {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+
+
+/* Container for the entire design */
+.our-product-section {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Image 1 Properties */
+.header-title {
+    width: 435px;
+    height: 83px;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Image 2 Properties (Group 242) */
+.main-content-group {
+    width: 1241px;
+    height: 376px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+/* Image 3 Properties (Description) */
+.description-text {
+    width: 562px;
+    height: 233px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 126%;
+    color: #000000;
+}
+
+/* Image 4 & 5 Properties (Group 223 & Ellipse 8) */
+.category-wrapper {
+    width: 764px;
+    height: 265px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.cat-item {
+    text-align: center;
+}
+
+.ellipse-frame {
+    width: 182px;
+    height: 182px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background: #f4f4f4;
+}
+
+.ellipse-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cat-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+/* Image 6 & 7: Coming Soon Properties */
+.coming-soon-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.cs-text {
+    font-size: 64px;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: -1px;
+}
+
+
+
+/* Footer Styling */
+        footer {
+            background-color: #0d2633;
+            color: white;
+            padding: 50px 20px 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer-brand {
+            flex: 2;
+            min-width: 250px;
+        }
+
+        .footer-brand .logo {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #f3bc18;
+        }
+
+        /* ===============================
+   HEADER + FOOTER LINK HOVER
+   Yellow text + animated line
+   =============================== */
+
+/* Header / Navbar links */
+.nav-links a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Footer links */
+.footer-links a {
+    position: relative;
+    color: #b0b0b0;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: yellow;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+        }
+
+        .social-icons i {
+            font-size: 1.2rem;
+            margin-right: 15px;
+            cursor: pointer;
+            color: #b0b0b0;
+        }
+
+        .footer-links {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .footer-links h4 {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a, .footer-links p {
+            text-decoration: none;
+            color: #b0b0b0;
+            font-size: 0.85rem;
+        }
+
+        .footer-links i {
+            margin-right: 10px;
+            color: #6fb6ff;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #224455;
+            margin-top: 40px;
+            padding-top: 20px;
+            font-size: 0.8rem;
+            color: #666;
+        }        
+
+        .services-title {
+    color: #000000 !important;
+}
+
+.idea-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000 !important;
+}
+
+/* ===== SECTION HEADINGS STYLING ===== */
+
+.services-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.idea-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 50px;
+    letter-spacing: 0.3px;
+}
+
+/* Yellow underline accent */
+.services-title::after,
+.idea-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 12px auto 0;
+}
+
+/* Soft fade-up animation */
+.services-title,
+.idea-title {
+    animation: fadeUp 0.8s ease-out both;
+    margin-top: 90px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== HERO GAP FIX ===== */
+
+.hero {
+    padding-bottom: 100px;
+}
+
+/* Booking widget space balance */
+.booking-widget {
+    bottom: -30px;
+}
+
+/* First section close to hero */
+.container:first-of-type {
+    margin-top: 0;
+}
+
+
+/* =====================================
+   FINAL MASTER DESIGN SYSTEM
+   ===================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #111;
+}
+
+/* Headings hierarchy */
+h1 { font-size: 3.2rem; font-weight: 800; }
+h2 { font-size: 2.4rem; font-weight: 700; }
+h3 { font-size: 1.3rem; font-weight: 600; }
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #555;
+}
+
+/* Section titles */
+.services-title,
+.idea-title,
+.section-title {
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 30px;
+}
+
+/* Card text */
+.card p,
+.m-content p {
+    font-size: 0.95rem;
+}
+
+/* Layout rhythm */
+.container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* Hero balance */
+.hero {
+    padding-bottom: 110px;
+}
+
+.booking-widget {
+    bottom: -32px;
+}
+
+/* ===== UNIVERSAL RESPONSIVE CSS ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;   /* horizontal scroll बंद */
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
+/* flex layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* common items */
+.box {
+  flex: 1 1 300px;   /* mobile friendly */
+  padding: 15px;
+}
+
+/* text responsive */
+h1 { font-size: clamp(22px, 4vw, 40px); }
+h2 { font-size: clamp(18px, 3vw, 32px); }
+p  { font-size: clamp(14px, 2.5vw, 18px); }
+
+/* ===== MOBILE MEDIA QUERY ===== */
+@media (max-width: 768px) {
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

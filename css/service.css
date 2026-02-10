@@ -1,0 +1,916 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= GLOBAL BODY ================= */
+body {
+    width: 1440px;              /* Figma canvas */
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+}
+
+/* ================= TOP BAR ================= */
+.top-bar {
+    height: 43px;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-right {
+    display: flex;
+    gap: 25px;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    position: relative;
+    width: 100%;
+   max-width: 1440px; 
+    height: 719px;
+    margin:0 auto;
+    overflow: hidden;
+   /* background-image:
+        radial-gradient(circle at left,
+            rgba(0,0,0,0.75) 0%,
+            rgba(0,0,0,0.5) 50%,
+            rgba(0,0,0,0) 75%),
+        url('/images/service.jpg');
+    background-size: cover;
+    background-position: center; */
+
+}
+.hero-img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display: block;
+}
+.hero-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:radial-gradient(circle at left,rgba(0,0,0,0.8)0%, rgba(0,0,0,0.4)75%);
+    
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    position: absolute;
+    top: 43px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ================= BUTTONS ================= */
+.btn-login,
+.btn-signup {
+    background-color: #FFB800;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ================= HERO TITLE ================= */
+.hero-title {
+    position: absolute;
+    left: 100px;
+    top: 154px;
+    width: 914px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.text-blue {
+    color: #2b59ff;
+}
+
+.text-yellow {
+    color: #FFB800;
+}
+
+/* ================= HERO DESCRIPTION ================= */
+.hero-description {
+    position: absolute;
+    left: 100px;
+    top: 333px;
+    width: 462px;
+    font-size: 20px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ================= CTA ================= */
+.btn-cta {
+    position: absolute;
+    left: 100px;
+    top: 492px;
+    width: 212px;
+    height: 47px;
+    background-color: #1E4DFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ================================================= */
+/* ============ TECHNOLOGY SERVICE SECTION ========= */
+/* ================================================= */
+
+.main-container {
+    position: relative;
+    width: 1440px;
+    height: 1073px;
+    background-color: rgba(235, 235, 235, 0.86);
+}
+
+/* ================= HEADINGS ================= */
+.main-heading {
+    position: absolute;
+    width: 664px;
+    left: 388px;
+    top: 98px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+}
+
+.main-description {
+    position: absolute;
+    width: 994px;
+    left: 223px;
+    top: 178px;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: #333333;
+}
+
+/* ================= IMAGE FRAME ================= */
+.service-image-frame {
+    position: absolute;
+    width: 525px;
+    height: 682px;
+    left: 100px;
+    top: 293px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.service-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================= RIGHT CONTENT ================= */
+.content-wrapper {
+    position: absolute;
+    left: 657px;
+    top: 334px;
+}
+
+.benefits-heading {
+    width: 684px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.sub-description {
+    width: 683px;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 45px;
+}
+
+/* ================= BENEFITS LIST ================= */
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.list-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.check-svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+}
+
+.item-text strong {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.item-text span {
+    font-size: 16px;
+    color: #555555;
+    margin-top: 4px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
+
+.how-it-works {
+    padding: 100px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Main Heading: Poppins, 40px, SemiBold */
+.main-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    color: #000000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Main Subtitle: Roboto, 18px, Regular */
+.main-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 100%;
+    color: #000000;
+    max-width: 1040px;
+    margin: 0 auto 80px;
+}
+
+/* Layout Wrapper */
+.steps-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.step-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 373px; /* As per Figma Screenshot */
+}
+
+/* Icon Design */
+.icon-group {
+    position: relative;
+    width: 167px;
+    height: 156px;
+    margin-bottom: 24px;
+}
+
+.yellow-circle {
+    width: 130px;
+    height: 130px;
+    background-color: #F2B824;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.icon-img {
+    width: 50px; /* Standardized icon size */
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Badge (Step Numbers) */
+.step-number {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    background-color: #F2B824;
+    border: 4px solid #ffffff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Step Typography */
+.step-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.step-desc {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+}
+
+/* Arrows */
+.arrow-divider {
+    padding-top: 65px;
+    opacity: 0.5;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 992px) {
+    .steps-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .arrow-divider {
+        transform: rotate(90deg);
+        padding: 0;
+    }
+}
+
+
+
+
+
+/* Container for the entire section based on Frame 20818 */
+.technology-services-section {
+    width: 1440px;
+    height: 1015px;
+    background-color: #EBEBEB;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-frame-20818 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 100px; /* Left margin based on Figma 'Left 100px' */
+}
+
+.left-content {
+    width: 593px;
+    margin-top: 117px;
+}
+
+/* Main Heading: Poppins SemiBold 40px */
+.main-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; /* Balanced spacing between groups */
+}
+
+/* Feature Group Layout */
+.feature-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Gap between icon and text coordinates */
+}
+
+/* Icon dimensions 84px to 88px based on Figma */
+.feature-icon {
+    width: 86px;
+    height: 86px;
+    object-fit: contain;
+}
+
+/* Sub-headings: Poppins SemiBold 20px */
+.feature-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000000;
+    margin: 0 0 8px 0;
+}
+
+/* Descriptions: Roboto Regular 16px */
+.feature-text p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 488px;
+    line-height: 1.2;
+    color: #000000;
+    margin: 0;
+}
+
+/* Right side Image: 609x819px */
+.right-image-container {
+    position: absolute;
+    width: 800px;
+    height: 819px;
+    left: 700px;
+    top: 98px;
+}
+
+.main-tech-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop effect in Figma */
+}
+
+.testimonials {
+            background: linear-gradient(to bottom, #f3bc18 50%, #e0e0e0 50%);
+            padding: 60px 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .section-title {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- CSS ONLY SCROLL ANIMATION --- */
+        @keyframes reveal {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px 20px;
+            flex: 1;
+            min-width: 300px;
+            max-width: 350px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            height: 547px;
+            
+            /* Modern CSS Scroll Reveal */
+            view-timeline-name: --card;
+            view-timeline-axis: block;
+            animation-linear: both;
+            animation-name: reveal;
+            animation-timeline: --card;
+            animation-range: entry 10% cover 30%;
+
+            /* Layout to keep stars inside */
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px) !important; /* Keep hover lift */
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .profile-img img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .client-name {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .designation {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+            font-family: Roboto;
+            line-height: 131%;
+            text-align: center;
+        }
+
+        .feedback {
+            font-size: 18px; /* Slightly adjusted to ensure space */
+            line-height: 1.4;
+            color: #333;
+            font-family: Roboto;
+            font-weight: 300;
+            text-align: center;
+            flex-grow: 1; /* Pushes stars down */
+            overflow: hidden;
+        }
+
+        .stars {
+            color: #f3bc18;
+            font-size: 2.5rem;
+            margin-top: auto; /* Forces stars to the bottom of the block */
+            padding-top: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #0d2633;
+            color: white;
+            padding: 50px 20px 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer-brand {
+            flex: 2;
+            min-width: 250px;
+        }
+
+        .footer-brand .logo {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #f3bc18;
+        }
+
+        /* ===============================
+   HEADER + FOOTER LINK HOVER
+   Yellow text + animated line
+   =============================== */
+
+/* Header / Navbar links */
+.nav-links a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Footer links */
+.footer-links a {
+    position: relative;
+    color: #b0b0b0;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: yellow;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+        }
+
+        .social-icons i {
+            font-size: 1.2rem;
+            margin-right: 15px;
+            cursor: pointer;
+            color: #b0b0b0;
+        }
+
+        .footer-links {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .footer-links h4 {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a, .footer-links p {
+            text-decoration: none;
+            color: #b0b0b0;
+            font-size: 0.85rem;
+        }
+
+        .footer-links i {
+            margin-right: 10px;
+            color: #6fb6ff;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #224455;
+            margin-top: 40px;
+            padding-top: 20px;
+            font-size: 0.8rem;
+            color: #666;
+        }        
+
+        .services-title {
+    color: #000000 !important;
+}
+
+.idea-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000 !important;
+}
+
+/* ===== SECTION HEADINGS STYLING ===== */
+
+.services-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.idea-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 50px;
+    letter-spacing: 0.3px;
+}
+
+/* Yellow underline accent */
+.services-title::after,
+.idea-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 12px auto 0;
+}
+
+/* Soft fade-up animation */
+.services-title,
+.idea-title {
+    animation: fadeUp 0.8s ease-out both;
+    margin-top: 90px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== HERO GAP FIX ===== */
+
+.hero {
+    padding-bottom: 100px;
+}
+
+/* Booking widget space balance */
+.booking-widget {
+    bottom: -30px;
+}
+
+/* First section close to hero */
+.container:first-of-type {
+    margin-top: 0;
+}
+
+
+/* =====================================
+   FINAL MASTER DESIGN SYSTEM
+   ===================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #111;
+}
+
+/* Headings hierarchy */
+h1 { font-size: 3.2rem; font-weight: 800; }
+h2 { font-size: 2.4rem; font-weight: 700; }
+h3 { font-size: 1.3rem; font-weight: 600; }
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #555;
+}
+
+/* Section titles */
+.services-title,
+.idea-title,
+.section-title {
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 30px;
+}
+
+/* Card text */
+.card p,
+.m-content p {
+    font-size: 0.95rem;
+}
+
+/* Layout rhythm */
+.container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* Hero balance */
+.hero {
+    padding-bottom: 110px;
+}
+
+.booking-widget {
+    bottom: -32px;
+}
+
+/* ===== UNIVERSAL RESPONSIVE CSS ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;   /* horizontal scroll बंद */
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
+/* flex layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* common items */
+.box {
+  flex: 1 1 300px;   /* mobile friendly */
+  padding: 15px;
+}
+
+/* text responsive */
+h1 { font-size: clamp(22px, 4vw, 40px); }
+h2 { font-size: clamp(18px, 3vw, 32px); }
+p  { font-size: clamp(14px, 2.5vw, 18px); }
+
+/* ===== MOBILE MEDIA QUERY ===== */
+@media (max-width: 768px) {
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
