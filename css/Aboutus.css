@@ -24,7 +24,6 @@
 .detail-text { flex: 1; }
 .detail-text h2 { font-size: 2.2rem; color: #1a1a1a; margin-bottom: 20px; border-bottom: 4px solid #fdd400; display: inline-block; }
 .detail-image { flex: 1; }
-.detail-image img { width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
 
 /* --- WHY CHOOSE US (SINGLE ANIMATION LOGIC) --- */
 .why-choose-section { padding: 80px 0; background: #fff; font-family: 'Poppins', sans-serif; }
